@@ -1,0 +1,3 @@
+Flickr is an image hosting and video hosting website, web services suite, and online community.
+
+The node_labels file contains the group that a user belongs. Each line has two columns. The first is the user id followed by the group.

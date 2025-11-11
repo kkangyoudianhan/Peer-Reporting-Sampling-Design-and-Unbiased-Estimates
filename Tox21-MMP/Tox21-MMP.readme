@@ -1,0 +1,102 @@
+Tox21-MMP contains the following comma separated text files:
+
+n: total number of nodes
+m: total number of edges
+N: number of graphs
+
+
+*.node_labels (n lines)
+	column vector of node labels,
+	the value in the i-th line corresponds to the node with node_id i
+
+*.link_labels (m lines)
+	labels for the edges in *.edges
+
+*.edges (m lines) 
+	sparse (block diagonal) adjacency matrix for all graphs,
+	each line corresponds to (row, col) resp. (node_id, node_id)
+
+*.graph_labels (N lines)
+	class labels for all graphs in the dataset,
+	the value in the i-th line is the class label of the graph with graph_id i
+
+*.graph_idx (n lines)
+	column vector of graph identifiers for all nodes of all graphs,
+	the value in the i-th line is the graph_id of the node with node_id i
+
+--- Node Label Conversion --- 
+
+Node labels were converted to integer values using this map:
+
+Component 0:
+	0	O
+	1	C
+	2	N
+	3	F
+	4	Cl
+	5	S
+	6	Br
+	7	Si
+	8	Na
+	9	I
+	10	Hg
+	11	B
+	12	K
+	13	P
+	14	Au
+	15	Cr
+	16	Sn
+	17	Ca
+	18	Cd
+	19	Zn
+	20	V
+	21	As
+	22	Li
+	23	Cu
+	24	Co
+	25	Ag
+	26	Se
+	27	Pt
+	28	Al
+	29	Bi
+	30	Sb
+	31	Ba
+	32	Fe
+	33	Ti
+	34	Tl
+	35	Sr
+	36	In
+	37	Dy
+	38	Ni
+	39	Be
+	40	Mg
+	41	Nd
+	42	Pd
+	43	Mn
+	44	Zr
+	45	Pb
+	46	Yb
+	47	Mo
+	48	Ge
+
+Edge labels were converted to integer values using this map:
+
+Component 0:
+	0	single
+	1	double
+	2	aromatic
+	3	triple
+
+
+
+
+Please cite the following if you use the data:
+
+@inproceedings{networkrepo,
+    title = {The Network Data Repository with Interactive Graph Analytics and Visualization},
+    author={Ryan A. Rossi and Nesreen K. Ahmed},
+    booktitle = {AAAI},
+    url={http://networkrepository.com},
+    year={2015}
+}
+
